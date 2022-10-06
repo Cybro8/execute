@@ -14,7 +14,7 @@ services:
         depends_on:
             - db
     db:
-        image: "cybro8/database-pg:latest"
+        image: postgres
         container_name: db
         environment:
             - POSTGRES_DB=studentdb
